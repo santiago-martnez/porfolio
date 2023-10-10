@@ -1,0 +1,36 @@
+
+.ww{
+    width: 5%;
+}
+.navbar
+{
+    background-color:rgb(243, 243, 243);
+    background-size: 400% 400%;
+    animation: cambiar 10s ease-in-out infinite;
+    transition: 0.5s ease-in-out;
+    border: none;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    font-weight:lighter;
+}
+.nav-item .nav-link{
+    color: #000000;
+}
+.nav-item .nav-link:hover{
+    color:#765ac9;
+}
+
+.container-fluid .navbar-brand{
+    color: #654caf;
+    font-weight: 900;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container-fluid .navbar-brand:hover{
+    color:#765ac9;
+}
+@keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}

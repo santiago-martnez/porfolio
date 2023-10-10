@@ -1,0 +1,257 @@
+.r-a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    background: linear-gradient(100deg,#7a57e4,#7c4db1,#70339e,#7a57e4);
+    background-size: 400% 400%;
+    animation: cambiar 10s ease-in-out infinite;
+    border-radius: 30px;
+    box-shadow: 0 0 15px transparent;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 15px #23175a;
+    border: none;
+    padding: 1em;
+    height: 60px;
+    width: 140px;
+
+    margin: 0;
+    margin: 5px;
+    padding: 0.4em;
+    font-family: sans-serif;
+    font-size: 16px;
+    height: 37px;
+    font-weight: 500;
+}
+.s{
+    display: flex;
+    justify-content: center;
+}
+
+
+#about{
+    padding: 0.4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#about h1{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    padding: 1em;
+    padding-bottom: 0.1em;
+    margin: 0;
+    color: white;
+}
+#about h2{
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+#about p{
+    padding-left: 1em;
+    padding-right: 1em;
+    color: white;
+}
+#about span{
+    font-weight: 700;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px;
+    align-items: center;
+    gap: 3%;
+}
+.foto{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(100deg,#7a57e4,#7c4db1,#70339e,#7a57e4);
+    background-size: 400% 400%;
+    animation: cambiar 10s ease-in-out infinite;
+    border-radius: 7em;
+    width: 170px;
+    height: 170px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+}
+.foto img{
+    padding: 1em;
+    width: 95%;
+}
+@keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #about .contenedor-about{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding: 1em;
+    }
+    #about .contenedor-about p{
+      text-align: justify;
+    }
+    .foto{
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(100deg,#7a57e4,#7c4db1,#70339e,#7a57e4);
+        background-size: 400% 400%;
+        animation: cambiar 10s ease-in-out infinite;
+        width: 350px;
+    }
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1200px){
+    #about .contenedor-about{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding: 1em;
+        width: 75%;
+    }
+    #about .contenedor-about p{
+      text-align: justify;
+    }
+    .foto{
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(100deg,#7a57e4,#7c4db1,#70339e,#7a57e4);
+        background-size: 400% 400%;
+        animation: cambiar 10s ease-in-out infinite;
+        width: 300px;
+    }
+      .foto{
+          width: 50%;
+      }
+      .foto img{
+          width: 100%;
+      }
+  }
+  @media screen and (min-width: 1201px){
+    #about {
+        width: 75%;
+        margin: 0 auto;
+    }
+    #about .contenedor-about{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding: 1em;
+        
+    }
+    #about .contenedor-about p{
+      text-align: justify;
+      font-size: 17px;
+    }
+    .foto{
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(100deg,#7a57e4,#7c4db1,#70339e,#7a57e4);
+        background-size: 400% 400%;
+        animation: cambiar 10s ease-in-out infinite;
+        width: 370px;
+    }
+    .foto{
+          width: 283px;
+    }
+  }
+  @media screen and (min-width: 1440px) and (max-width: 1920px){
+    #about .contenedor-about{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding: 0em;
+        
+    }
+    #about .contenedor-about p{
+      text-align: justify;
+      font-size: 15px;
+    }
+    .foto{
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(100deg,#7a57e4,#7c4db1,#70339e,#7a57e4);
+        background-size: 400% 400%;
+        animation: cambiar 10s ease-in-out infinite;
+        width: 260px;
+        height: 260px;
+        border-radius: 10em;
+    }
+    .foto img{
+        width: 260px;
+        height: 260px;
+    }
+
+    #about .contenedor-about p{
+        font-size: 17px;
+    }
+    #about h1{
+        font-size: 39px;
+    }
+    .redes button{
+        font-size: 16px;
+        height: 60px;
+        width: 140px;
+    }
+  }
+  @media screen and (min-width: 1920px){
+    #about{
+       width: 55%;
+       margin: 0 auto;
+    }
+    #about .contenedor-about{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding: 4em;
+    }
+    #about .contenedor-about p{
+      text-align: justify;
+    }
+    .foto{
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(100deg,#7a57e4,#7c4db1,#70339e,#7a57e4);
+        background-size: 400% 400%;
+        animation: cambiar 10s ease-in-out infinite;
+        width: 240px;
+        height: 240px;
+        border-radius: 10em;
+        margin-right: 0px;
+    }
+    .foto img{
+        width: 250px;
+        height: 250px;
+    }
+
+    #about .contenedor-about p{
+        font-size: 19px;
+    }
+    #about h1{
+        font-size: 39px;
+    }
+    .redes button{
+        font-size: 18px;
+        height: 50px;
+        width: 170px;
+    }
+    .redes{
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+  }

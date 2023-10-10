@@ -1,0 +1,27 @@
+footer p{
+    padding: 1em;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}
+
+    @media screen and (min-width: 1024px) and (max-width: 1200px){
+      footer p{
+          font-size: 19px;
+      }
+    }
+    @media screen and (min-width: 1200px) and (max-width: 1440px){
+        footer p{
+            font-size: 19px;
+        }
+    }
+    @media screen and (min-width: 1440px) and (max-width: 1920px){
+        footer p{
+            font-size: 20px;
+        }
+    }
+    @media screen and (min-width: 1920px){
+        footer p{
+            font-size: 15px;
+        }
+    }

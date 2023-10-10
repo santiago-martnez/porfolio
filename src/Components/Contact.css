@@ -1,0 +1,220 @@
+#contact{
+    background-color: #e6e4ec;
+    
+}
+#contact h2{
+    color: black;
+    font-size: 30px;
+    padding-top: 1em;
+    margin: 0;
+}
+#contact .formu p{
+    color: black;
+    text-align: center;
+    font-size: 17px;
+    padding-bottom: 0em;
+    font-weight: 450;
+    margin: 0.4em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.casilla{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.casilla input{
+    width: 200px;
+    border-style: none;
+    height: 24px;
+    border-radius: 0.5em;
+
+}
+.casilla textarea{
+    width: 200px;
+    border-style: none;
+    height: 24px;
+    border-radius: 0.5em;
+
+}
+.formu{
+    display: flex;
+    flex-direction: column;
+    
+}
+.formu button{
+    height:auto;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    text-decoration: none;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    background: linear-gradient(100deg,#7a57e4,#7c4db1,#70339e,#7a57e4);
+    background-size: 400% 400%;
+    animation: cambiar 10s ease-in-out infinite;
+    border-radius: 30px;
+    box-shadow: 0 0 15px transparent;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 15px #23175a;
+    border: none;
+    padding: 0.9em;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+label{
+    font-weight: 500;
+    padding: 4px;
+}
+#contact .datos{
+    text-align: justify;
+    padding: 0.5em;
+}
+
+.datos h1{
+    font-size: 20px;
+    margin: 0;
+    padding: 0.4em;
+    color: #7a57e4;
+}
+#contact .datos p{
+    display: inline;
+    font-weight: 600;
+  
+}
+#contact hr{
+    margin: 0 auto;
+    width: 50%;
+    background-color:#7a57e4 ;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .casilla input{
+        width: 320px;
+        border-style: none;
+        height: 24px;
+        border-radius: 0.5em;
+    
+    }
+    .casilla textarea{
+        width: 320px;
+        border-style: none;
+        height: 24px;
+        border-radius: 0.5em;
+    }
+    .formu button{
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .columna{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2em;
+        padding-top: 0;
+    }
+    .casilla{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+  hr{
+      display: none;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px){
+    #contact .datos h1{
+        font-size: 20px;
+    }
+    #contact .formu p{
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 0;
+    }
+    #contact .casilla button{
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1920px){
+    #contact .datos h1{
+        font-size: 25px;
+    }
+    #contact .formu p{
+        font-size: 28px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 0;
+    }
+    #contact .datos p{
+        font-size: 18px;
+    }
+   
+    #contact .casilla button{
+        margin: 0 auto;
+        margin-top: 30px;
+        font-size: 14px;
+        height: 60px;
+    }
+    #contact .casilla label{
+        font-size: 20px;
+    }
+    #contact .casilla input{
+        width: 500px;
+        height: 60px;
+    }
+    #contact .casilla textarea{
+        width: 500px;
+        height: 60px;
+    }
+}
+@media screen and (min-width: 1920px){
+    .formu{
+        width: 62%;
+
+        margin: 0 auto;
+    }
+    #contact .datos h1{
+        font-size: 30px;
+    }
+    #contact  h2{
+        font-size: 39px;
+    }
+    #contact .formu p{
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 0;
+    }
+    #contact .casilla button{
+        margin: 0 auto;
+        margin-top: 30px;
+        font-size: 20px;
+        height: 60px;
+    }
+    #contact .casilla label{
+        font-size: 22px;
+    }
+    #contact .casilla input{
+        width: 500px;
+        height: 60px;
+    }
+    #contact .casilla textarea{
+        width: 500px;
+        height: 60px;
+    }
+    .datos{
+        padding: 0;
+    }
+}
