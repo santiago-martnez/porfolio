@@ -4,10 +4,11 @@ import About from "./Components/About";
 import Contact from "./Components/Conctact";
 import Navbar from "./Components/Navbar";
 import Projects from "./Components/Proyects";
+import ProjectsMain from './Components/ProyectsMain';
 import Skills from "./Components/Skills"
 import Footer from './Components/Footer';
 import Presentacion from './Components/Presentacion';
-import 'animate.css';
+//import 'animate.css';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <main className="text-gray-400 bg-gray-900 body-font">
       <Navbar/>
       <Presentacion/>
+      <ProjectsMain />
       <Projects />
       <Skills />
       <About />

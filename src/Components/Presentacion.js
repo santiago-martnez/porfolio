@@ -1,5 +1,5 @@
 import './Presentacion.css'
-import cv from '../Assets/cv-santiago-martinez.pdf'
+import cv from '../Assets/ultimo-cv.pdf'
 
 export default function Contact() {
     return (

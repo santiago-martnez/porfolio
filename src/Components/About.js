@@ -1,21 +1,21 @@
 import React from "react";
 import './About.css';
 import Button from './Button';
-import cv from '../Assets/CV-SantiagoMartinez 061023.pdf'
+import cv from '../Assets/ultimo-cv.pdf'
 
 export default function About() {
   return (
     <section id="about">
         <h1>Sobre mi</h1>
         <div className="contenedor-about">
-        <div class="foto">
+        {/* <div class="foto">
                     <img src="./santiago.png" alt=""/>
-                </div>
+                </div> */}
                 <div>
-                    <p>Hola, me llamo <span>Santiago Martinez.</span> En 2020 comence a estudiar <span>Ingenieria en
+                    <p>Hola, me llamo <span>Santiago Martinez.</span> En 2022 comence a estudiar <span>Ingenieria en
                     Sistemas de Informacion</span> en la <span>Universidad Abierta Interamericana.</span></p>
                     <p>
-                    Desde el año 2022 de forma autodidacta me centro en aprender nuevas tecnologias.
+                    Desde entonces de forma autodidacta tambien me centro en aprender nuevas tecnologias.
                     </p>
                     < p>
                     Ahora como siguiente paso en mi camino profesional, busco tener mi primer experiencia laboral para
