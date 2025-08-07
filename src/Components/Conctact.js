@@ -30,7 +30,7 @@ export default function Contact() {
     <section id="contact" className="relative">
       <div className="formu">
         <form
-          netlify
+          data-netlify="true"
           name="contact"
           onSubmit={handleSubmit}
         >

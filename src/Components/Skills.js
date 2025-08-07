@@ -14,7 +14,7 @@ export default function Skills() {
         </div>
         <div className="habilidades">
           {skills.map((skill) => (
-            <div key={skill} className="hab-individual">
+            <div key={skill.title} className="hab-individual">
               <div>
                 <img
                   alt={skill.title}
