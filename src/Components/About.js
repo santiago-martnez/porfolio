@@ -1,6 +1,5 @@
 import React from "react";
 import './About.css';
-import Button from './Button';
 import cv from '../Assets/ultimo-cv.pdf'
 
 export default function About() {
