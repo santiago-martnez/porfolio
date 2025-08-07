@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import './Proyects.css';
 import ContainerProy from "./ContainerProy";
 import AllProyects from "./AllProyects";
-import ProyectMain from './ProyectsMain';
+
 
 export default function Projects() {
   const [tecnologia, setTecnologia] = useState('todos');
@@ -10,9 +10,6 @@ export default function Projects() {
   return (
     <section id="projects" className="text-gray-400 bg-gray-900 body-font py-0">
         <h1>Otros</h1>
-
-      
-
 
         <div className="Con-proy">
                 <p>Selecciona la tecnologia del proyecto:</p>
