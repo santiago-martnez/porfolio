@@ -35,8 +35,8 @@ export default function Projects() {
                           Codigo
                         </a>
                       </div>
-                      <p className="fw-bold">User: <span className="fw-normal">santiago</span></p>
-                      <p className="fw-bold">Pass: <span className="fw-normal">test</span></p>
+                      <p className="fw-bold font-subtitulo-color">User: <span className="fw-normal text-white">test</span></p>
+                      <p className="fw-bold font-subtitulo-color">Pass: <span className="fw-normal text-white">test123</span></p>
           </div>
 
           
