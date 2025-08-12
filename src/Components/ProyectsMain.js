@@ -3,12 +3,13 @@ import './Proyects.css';
 
 export default function Projects() {
   return (
+    
     <section id="projects" className="text-light py-0 mb-0">
       <div className="container">
         <h1 className="mb-1">Aplicaciones que he construido</h1>
         
         <div className="mb-0 text-center">
-          <p>Último proyecto y más completo:</p>
+          <p>Último proyecto:</p>
         </div>
 
         <div className="row align-items-center mb-5">

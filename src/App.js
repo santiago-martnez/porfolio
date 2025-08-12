@@ -8,12 +8,14 @@ import ProjectsMain from './Components/ProyectsMain';
 import Skills from "./Components/Skills"
 import Footer from './Components/Footer';
 import Presentacion from './Components/Presentacion';
+import ParticleBackground from "./Components/ParticleBackgound";
 
 
 
 function App() {
   return (
     <main className="text-gray-400 bg-gray-900 body-font">
+      <ParticleBackground />
       <Navbar/>
       <Presentacion/>
       <ProjectsMain />
