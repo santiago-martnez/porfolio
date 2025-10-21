@@ -34,6 +34,7 @@ export default function Contact() {
           name="contact"
           onSubmit={handleSubmit}
         >
+        <input type="hidden" name="form-name" value="contact" />
         <h2>
             Contacto
         </h2>
