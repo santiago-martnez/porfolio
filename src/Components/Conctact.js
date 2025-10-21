@@ -7,7 +7,7 @@ export default function Contact() {
   const [message, setMessage] = React.useState("");
   const [submitted, setSubmitted] = React.useState(false);
 
-  // Función para codificar los datos del formulario
+  // Codifica los datos del formulario para Netlify
   function encode(data) {
     return Object.keys(data)
       .map(
@@ -16,7 +16,7 @@ export default function Contact() {
       .join("&");
   }
 
-  // Maneja el envío del formulario
+  // Maneja el envío con fetch
   function handleSubmit(e) {
     e.preventDefault();
     const form = e.target;
@@ -41,6 +41,21 @@ export default function Contact() {
 
   return (
     <section id="contact" className="relative">
+      {/* FORMULARIO INVISIBLE PARA NETLIFY */}
+      <form 
+        name="contact" 
+        method="POST" 
+        data-netlify="true" 
+        netlify-honeypot="bot-field" 
+        hidden
+      >
+        <input type="hidden" name="form-name" value="contact" />
+        <input name="name" />
+        <input name="email" />
+        <textarea name="message"></textarea>
+      </form>
+
+      {/* FORMULARIO VISIBLE PARA EL USUARIO */}
       <div className="formu">
         {submitted ? (
           <div className="thank-you">
