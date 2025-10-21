@@ -7,7 +7,6 @@ export default function Contact() {
   const [message, setMessage] = React.useState("");
   const [submitted, setSubmitted] = React.useState(false);
 
-  // Codifica los datos del formulario para Netlify
   function encode(data) {
     return Object.keys(data)
       .map(
@@ -16,10 +15,10 @@ export default function Contact() {
       .join("&");
   }
 
-  // Maneja el envío con fetch
   function handleSubmit(e) {
     e.preventDefault();
     const form = e.target;
+
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -93,50 +92,36 @@ export default function Contact() {
               </div>
 
               <div className="casilla">
-                <label htmlFor="name" className="leading-7 text-sm text-gray-400">
-                  Nombre
-                </label>
+                <label htmlFor="name">Nombre</label>
                 <input
                   type="text"
                   id="name"
                   name="name"
-                  className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
                 />
 
-                <label htmlFor="email" className="leading-7 text-sm text-gray-400">
-                  Correo electrónico
-                </label>
+                <label htmlFor="email">Correo electrónico</label>
                 <input
                   type="email"
                   id="email"
                   name="email"
-                  className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
                 />
 
-                <label htmlFor="message" className="leading-7 text-sm text-gray-400">
-                  Mensaje
-                </label>
+                <label htmlFor="message">Mensaje</label>
                 <textarea
                   id="message"
                   name="message"
-                  className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   required
                 />
 
-                <button
-                  type="submit"
-                  className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-                >
-                  Enviar
-                </button>
+                <button type="submit">Enviar</button>
               </div>
             </div>
           </form>
